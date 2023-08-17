@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384- MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--FONT LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display =swap" rel="stylesheet">
+    <title>CITE EVENTS 2022</title>
+</head>
+    <body>
+
+<style>
+
+/*NAVBAR CSS*/
+    nav{
+        background: #000;
+        opacity: .9;
+    }
+    .navbar-brand{
+        font-family: 'DM Serif Display', serif;
+        font-size: 2vmax;
+        font-size: 5vmin;
+        margin-left: 30px;
+    }
+    .nav-link{
+        -webkit-text-fill-color: white;
+        font-size: 1.1vmax;
+        font-size: 2.5vmin;
+        font-weight:500;
+        font-family: 'DM Serif Display', serif;
+    }
+    .nav-link:hover{
+        -webkit-text-fill-color: #9bbb8a;
+    }
+    .nav-link:active{
+        -webkit-text-fill-color:#ab8d04;
+    }
+    .nav-item{
+        margin-left: 25px;
+    }
+    .dropdown-item{
+        font-family: 'DM Serif Display', serif;
+        font-size: 2.5vmin;
+    }
+    .dropdown-item:hover{
+        -webkit-text-fill-color:#ab8d04;
+    }
+    .dropdown-item:active{
+        background: black;
+    }
+    section{
+        justify-content: center;
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+    }
+    #home{
+        background: linear-gradient(to bottom left, #f4eddb 0%, #b4beca 100%);
+    }
+    #about{
+        background: linear-gradient(to top left, #f4eddb 0%, #b4beca 100%);
+    }
+    #hackathon{
+        background: linear-gradient(to bottom left, #f4eddb 0%, #b4beca 100%);
+    }
+    #exhibit{
+        background: linear-gradient(to top left, #f4eddb 0%, #b4beca 100%);
+    }
+    #esports{
+        background: linear-gradient(to bottom left, #f4eddb 0%, #b4beca 100%);
+    }
+    #sports{
+        background: linear-gradient(to top left, #f4eddb 0%, #b4beca 100%);
+    }
+    #komsayahan{
+        background: linear-gradient(to bottom left, #f4eddb 0%, #b4beca 100%);
+    }
+
+/*SECTION STYLE CSS*/
+/*HOME*/
+    #homediv{
+        display: flex;
+        flex-direction: row;
+    }
+    #titlehome{
+        color: rgb(0,0,0,0);
+        -webkit-text-stroke: 1px black;
+        margin-top: 160px;
+        margin-left: 100px;
+        font-size: 50px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    #homegif{
+        margin-top: 160px;
+        height:530px;
+        width:690px;
+    }
+    #phome{
+        font-size: 20px;
+        font-family: 'DM Serif Display', serif;
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    #homebtn{
+        margin-top: 100px;
+        margin-left: 500px;
+    }
+    #conhome{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*ABOUT*/
+    .div-1{
+        margin-top: 110px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-style: bold;
+        font-family:'Times New Roman', serif;
+        color: black;
+    }
+    #sclogo{
+        height: 300px;
+    }
+    #titleabout{
+        font-family: 'Libre Baskerville', serif;
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+        justify-content: center;
+        font-family: Times New Roman;
+        color: black;
+        font-size: 18px;
+        flex: 33.33%;
+        height: 200px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+/*HACKATHON CSS*/
+    #hackdiv{
+        display: flex;
+        justify-content: center;
+    }
+    #titlehack{
+        font-family: 'Libre Baskerville', serif;
+    }
+
+/*CITE EXHIBIT CSS*/
+    #exhidiv{
+        display: flex;
+        justify-content: center;
+    }
+    #titleexhi{
+        font-family: 'Libre Baskerville', serif;
+    }
+
+/*ESPORTS CSS*/
+    #espodiv{
+        display: flex;
+        justify-content: center;
+    }
+    #espotitle{
+        font-family: 'Libre Baskerville', serif;
+    }
+
+/*SPORTS CSS*/
+    #sportsdiv{
+        display: flex;
+        justify-content: center;
+    }
+    #sportstitle{
+        font-family: 'Libre Baskerville', serif;
+    }
+
+/*KOMSAYAHAN CSS*/
+    #komsadiv{
+        display: flex;
+        justify-content: center;
+    }
+    #komsatitle{
+        font-family: 'Libre Baskerville', serif;
+    }
+
+/*GALLERY STYLE CSS*/
+    .row{
+        margin-top: 15px;
+        align-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px){
+
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 6vmax;
+        margin-left: 30px;
+    }
+    .nav-link{
+        -webkit-text-fill-color: white;
+        font-size: 4vmax;
+        font-weight:500;
+    }
+    .dropdown-item{
+        font-family: 'DM Serif Display', serif;
+        font-size: 3.5vmax;
+    }
+    /*HOME*/
+    #home{
+        background-image: linear-gradient(to bottom left, #f4eddb 0%, #b4beca
+        100%);
+    }
+    #titlehome{
+        margin: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        font-size: 55px;
+    }
+    #homediv{
+        display: flex;
+        flex-direction: column;
+    }
+    #homegif{
+        margin-top: 50px;
+        height:365px;
+        width:445px;
+    }
+    #phome{
+        font-size: 25px;
+        text-align: center;
+        margin:10px;
+        margin-bottom: 80px;
+    }
+    #homebtn{
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        color:black;
+        font-size: 20px;
+    }
+    a{
+        color: unset;
+        text-decoration: unset;
+    }
+    #divcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    /*ABOUT MEDIA CSS*/
+    body{
+        position: absolute;
+    }
+    #titleup{
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+    #sclogo{
+        display: flex;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+
+    /* max-height:270;
+    min-width:340;*/
+
+    }
+    #aboutcon{
+        flex-direction: column;
+    }
+    #aboutlabel{
+        font-size: 18px;
+        position: center;
+    }
+
+    /*HACKATHON MEDIA CSS*/
+    #titlehack{
+        font-size: 35px;
+    }
+    #hackpic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*CITE EXHIBIT MEDIA CSS*/
+    #titleexhi{
+        font-size: 35px;
+    }
+    #exhipic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*ESPORTS MEDIA CSS*/
+    #espotitle{
+        font-size: 35px;
+    }
+    #espopic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*SPORTS MEDIA CSS*/
+    #sportstitle{
+        font-size: 35px;
+    }
+    #sportspic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*KOMSAYAHAN MEDIA CSS*/
+    #komsatitle{
+        font-size: 35px;
+    }
+    #komsapic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    </style>
+<!--END OF NAVBAR CSS-->
+
+<!--HEADER-->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">CITE Events 2022</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bstarget="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto" style="margin-right: 90px;">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hackathon" class="nav-link">HACKATHON</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#exhibit" class="nav-link">CITE EXHIBIT</a>
+                </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id=navbarDropdown role="button" data-bs-toggle="dropdown">CITE FEST</a>
+            <ul class="dropdown-menu" arialabelledby="navbarDropdown">
+                <li><a href="#esports" class="dropdownitem">Esports</a></li>
+                <li><a href="#sports" class="dropdownitem">Sportsfest</a></li>
+                <li><a href="#komsayahan" class="dropdownitem">Komsayahan</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+</nav>
+</div>
+</header>
+<!--END OF HEADER-->
+
+<!--HOME SECTION-->
+<section id="home">
+<div>
+    <div class="div-1" id="homediv">
+        <img src="./assets/homeprese.gif" id="homegif">
+    <div class="container" id="conhome">
+        <h1 id="titlehome">College of<br>Information<br>Technology Education</h1>
+        <p id="phome">Take a trip down to memory lane by viewing<br> the images we have captured during the exciting<br> events of University of Pangasinan's CITE department!<br></p>
+        <a href="#about">
+    <button type="button" class="btn btn-outline-secondary" id="homebtn">See More</button>
+        </a>
+    </div>
+    </div>
+    </div>
+</section>
+<!--END OF HOME SECTION-->
+
+<!--ABOUT SECTION-->
+<section id="about">
+    <div>
+        <div class = "div-1" id="titleabout">
+            <h1 id="titleup">&nbsp; UPCITE EVENTS</h1>
+                <img src="./assets/about.png" id="sclogo">
+            </div>
+        <div class="container" id="aboutcon">
+        <div class="column" id="aboutlabel">
+            <h2> HACKATHON </h2>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; Hackathon is where the IT
+            Students had a programming contest that was held around the Pangasinan province.
+            The programmers showcased their talents and the reason why the hackathon was held
+            was because they wanted an asset that will give ease to the PNP.</p>
+        </div>
+        <div class="column" id="aboutlabel">
+            <h2> CITE EXHIBIT </h2>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; The CITE Exhibit showed how
+            capable and committed the university's IT students had remained as they paved
+            their way onto the technological field, creating apps and perfecting their
+            talents beyond their capabilities. A true exCITEment fulfilled for the CITE
+            Application Exhibit this year!</p>
+        </div>
+        <div class="column" id="aboutlabel">
+            <h2> CITE FEST </h2>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; The CITE Fest is an annual
+            event held by the College of Information Technology Education Department.
+            Activities under it are the Sports Fest wherein it consists of various physical
+            sports for the CITE students to participate in Basketball,
+            Volleyball, Badminton, and Chess. These activities made our students cooperate
+            with each other and communicate with each member. Another activity is the ESports wherein the students showcase their gaming skills battling out to see
+            whose the best team in various games such as valorant, mobile legends, etc.
+            Lastly is the Komsayahan the major highlight of the whole CITE Fest wherein it
+            showcase students with their creative cosplays and outstanding performances.</p>
+        </div>
+    </div>
+</div>
+</section>
+<!--END OF ABOUT SECTION-->
+
+<!--HACKATHON SECTION-->
+<section id="hackathon">
+    <div>
+        <div class = "div-1" id="hackdiv">
+            <h1 id="titlehack">HACKATHON</h1>
+    </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="hackpic">
+                        <img src="./assets/hackathon1.jpg" height="330" width="350"><br>
+                        <br><img src="./assets/hackathon2.jpg" height="550" width="350"><br>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0" id="hackpic">
+                        <img src="./assets/hackathon3.jpg" height="500" width="360"><br>
+                        <br><img src="./assets/hackathon4.jpg" height="350" width="360"><br>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0" id="hackpic">
+                        <img src="./assets/hackathon5.jpg" height="380" width="400"><br>
+                        <br><img src="./assets/hackathon6.jpg" height="510" width="400"><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--END OF HACKATHON SECTION-->
+
+<!--CITE EXHIBIT SECTION-->
+<section id="exhibit">
+    <div>
+        <div class = "div-1" id="exhidiv">
+        <h1 id="titleexhi">CITE EXHIBIT</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="exhipic">
+            <img src="./assets/exhibit1.jpg" height="350" width="390"><br>
+            <br><img src="./assets/exhibit2.jpg" height="510" width="390"><br>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0" id="exhipic">
+            <img src="./assets/exhibit3.jpg" height="510" width="390"><br>
+            <br><img src="./assets/exhibit4.jpg" height="350" width="390"><br>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0" id="exhipic">
+            <img src="./assets/exhibit5.jpg" height="330" width="410"><br>
+            <br><img src="./assets/exhibit6.jpg" height="530" width="410"><br>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+<!--CITE EXHIBIT SECTION-->
+
+<!--E-SPORTS SECTION-->
+<section id="esports">
+    <div>
+        <div class = "div-1" id="espodiv">
+            <h1 id="espotitle">E-SPORTS</h1>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="espopic">
+                    <img src="./assets/esports1.jpg" height="350" width="400"><br>
+                    <br><img src="./assets/esports2.jpg" height="420" width="400"><br>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0" id="espopic">
+                    <img src="./assets/esports3.jpg" height="300" width="400"><br>
+                    <br><img src="./assets/esports4.jpg" height="350" width="400"><br>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0"id="espopic">
+                    <img src="./assets/esports5.jpg" height="350" width="420"><br>
+                    <br><img src="./assets/esports6.jpg" height="420" width="420"><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--END OF E-SPORTS SECTION-->
+
+<!--SPORTS FEST SECTION-->
+<section id="sports">
+    <div>
+        <div class = "div-1" id="sportsdiv">
+            <h1 id="sportstitle">SPORTS FEST</h1>
+    </div>
+        <div class="container" id="sportscon">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="sportspic">
+                    <img src="./assets/sports1.jpg" height="350" width="400"><br>
+                    <br><img src="./assets/sports2.jpg" height="420" width="400"><br>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0" id="sportspic">
+                    <img src="./assets/sports3.jpg" height="300" width="400"><br>
+                    <br><img src="./assets/sports4.jpg" height="350" width="400"><br>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0" id="sportspic">
+                    <img src="./assets/sports5.jpg" height="350" width="450"><br>
+                    <br><img src="./assets/sports6.jpg" height="420" width="450"><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--END OF SPORTS FEST SECTION-->
+
+<!--KOMSAYAHAN-->
+<section id="komsayahan">
+    <div>
+        <div class = "div-1" id="komsadiv">
+            <h1 id="komsatitle">KOMSAYAHAN</h1>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="komsapic">
+                    <img src="./assets/komsayahan1.jpg" height="400" width="380"><br>
+                    <br><img src="./assets/komsayahan2.jpg" height="510" width="380"><br>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0" id="komsapic">
+                    <img src="./assets/komsayahan3.jpg" height="565" width="380"><br>
+                    <br><img src="./assets/komsayahan4.jpg" height="350" width="380"><br>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0" id="komsapic">
+                    <img src="./assets/komsayahan5.jpg" height="400" width="420"><br>
+                    <br><img src="./assets/komsayahan6.jpg" height="520" width="420"><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--END OF KOMSAYAHAN-->
+
+</div>
+</body>
+</html>
